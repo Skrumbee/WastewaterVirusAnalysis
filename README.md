@@ -32,3 +32,14 @@ Future iterations could improve model robustness and apply corrective techniques
 ## Broader Context
 
 This project also serves as a potential (internal) pair for a **public-facing dashboard**, making virus sequencing data more transparent to the community. It bridges academic work, internal operations, and public communication — and acts as a proof-of-concept for how data science can enhance predictive visibility for municipal public health staff within the city.
+
+## Setup
+In your R environment:
+```
+install.packages(c("RMySQL", "dplyr", "lubridate", "ggplot2"),
+                  dependencies = TRUE)
+```
+The Data:
+- A database named 'sensordata' with a table called 'sensordata' is expected
+- Data is not provided in this repository. With permission from data owners, a sample .sql script may be added later
+- MySQL was used to store the data, the same results can be achieved from a flat file
